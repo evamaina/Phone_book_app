@@ -1,6 +1,7 @@
 import unittest  # Importing the unittest module
 from contact import Contact  # Importing the contact class
 
+
 class TestContact(unittest.TestCase):
 
     '''
@@ -11,7 +12,7 @@ class TestContact(unittest.TestCase):
         '''
         Set up method to run before each test cases.
         '''
-        self.new_contact = Contact("Eva","Maina","0722811823","evajohnson714@gmail.com") # create contact object
+        self.new_contact = Contact("Eva", "Maina", "0722811823",  "evajohnson714@gmail.com")
 
 
     def test_init(self):
