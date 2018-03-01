@@ -1,5 +1,5 @@
-import unittest # Importing the unittest module
-from contact import Contact # Importing the contact class
+import unittest  # Importing the unittest module
+from contact import Contact  # Importing the contact class
 
 class TestContact(unittest.TestCase):
 
@@ -74,12 +74,12 @@ class TestContact(unittest.TestCase):
 
     def test_view_contact_by_number(self):
         self.new_contact.add_contact()
-        test_contact = Contact("Test","user","0711223344","test@user.com") # new contact
+        test_contact = Contact("Test","user", "0711223344", "test@user.com") # new contact
         test_contact.add_contact()
 
         view_contact = Contact.view_by_number("0711223344")
 
-        self.assertEqual(view_contact.email,test_contact.email)
+        self.assertEqual(view_contact.email, test_contact.email)
 
 
 if __name__ == '__main__':
